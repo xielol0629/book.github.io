@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- 圓 三角形 曲線 漸層 記得pdf檔-->
+<html >
+　<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <title>s0861127</title>
+    <script>
+      function ChangeCircle(evt){
+      var theCircle =evt.target;
+      var radius=theCircle.getAttribute("r");
+       if (radius ==50)
+          radius =75;
+       else 
+         radius=50;
+       theCircle.setAttribute("r",radius); 
+      }
+      </script>
+  </head>  
+    
+  <body bgcolor=#dfb88e style="margin: 0;">
+    <h1>Lesson 1 Practice </h1>
+    
+      <svg width="500px" height="500px">
+         <circle cx="150" cy="110" r="100" fill="#62E1FF" 
+         stroke="pink" stroke-width="10" onclick ="ChangeCircle(evt)"/>
+      </svg>
+  </body>
+</html>
